@@ -7,12 +7,12 @@ import bookingsRoute from"./routes/booking.js";
 import roomRoute from "./routes/room.js"
 
 
-// import cors from "cors"
+import cors from "cors"
 
 const app = express();
 
 app.use(express.json())
-// app.use(cors())
+app.use(cors())
 
 
 mongoose.connect(process.env.baseUrl,{
